@@ -3,10 +3,11 @@ NAME	= battle
 CXXC	= c++
 CXXFLAGS= -Wall -Wextra -Werror -g
 
-SRC		= src/main.cpp
+SRC		= src/main.cpp			\
+		src/class/Tile.cpp
 
 OBJ		= $(addprefix .obj/, $(SRC:.cpp=.o))
-INC		= -I./inc
+INC		= -I./inc -I./inc/class
 
 # -- RULES -- #
 
