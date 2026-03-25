@@ -1,12 +1,29 @@
 #include <iostream>
-#include <Tile.hpp>
+#include <Hex.hpp>
 
 int main() {
-	std::cout << "Tile test" << std::endl;
 
-	Tile tile(2, 6);
+	Hex a(5, -6, 1);
+	Hex b(3, -2, -1);
+	Hex c(3, -2, -1);
 
-	t_point pt = tile.getPosition();
 
-	std::cout << "x=" << pt.x << ", y=" << pt.y << std::endl;
+	std::cout << "OPE TEST" << std::endl;
+	std::cout << (a == b) << std::endl;
+	std::cout << (a != b) << std::endl;
+	std::cout << (b != c) << std::endl;
+
+	Hex d = b + c;
+	Hex e = a - c;
+	Hex f = d.multiply(5);
+	std::cout << d.q() << ", " << d.r() << ", " << d.s()<< std::endl;
+	std::cout << e.q() << ", " << e.r() << ", " << e.s()<< std::endl;
+	std::cout << f.q() << ", " << f.r() << ", " << f.s()<< std::endl;
+
+	std::cout << "LEN + DIST" << std::endl;
+	std::cout << f.len() << std::endl;
+	Hex g(0, -3, +3);
+	std::cout << b.distance(g) << std::endl;
+
+
 }

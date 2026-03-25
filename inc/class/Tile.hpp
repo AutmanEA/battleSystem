@@ -1,4 +1,4 @@
-#include <point.hpp>
+#include <Hex.hpp>
 
 /**
  * @brief Tile class represents one tile
@@ -9,13 +9,14 @@ class Tile {
 	public:
 
 		Tile();
-		Tile(int x, int y);
+		Tile(Hex const &position);
 		~Tile();
 
-		t_point	getPosition() const;
+		Hex	getPosition() const;
 
 	private:
 
-		t_point	_position;
+		Hex				_position;
+		TileStatement	_statement;
 		// void	*_content; //Ce qu'il y a sur la case
 };

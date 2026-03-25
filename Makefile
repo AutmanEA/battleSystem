@@ -4,6 +4,7 @@ CXXC	= c++
 CXXFLAGS= -Wall -Wextra -Werror -g
 
 SRC		= src/main.cpp			\
+		src/class/Hex.cpp		\
 		src/class/Tile.cpp
 
 OBJ		= $(addprefix .obj/, $(SRC:.cpp=.o))
