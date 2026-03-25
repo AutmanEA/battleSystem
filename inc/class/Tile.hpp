@@ -1,5 +1,9 @@
 #include <point.hpp>
 
+/**
+ * @brief Tile class represents one tile
+ * @param getPosition() is used to get tile position
+ */
 class Tile {
 
 	public:

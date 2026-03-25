@@ -1,5 +1,5 @@
 # battleSystem
-A turn based battle system in CPP
+A turn based battle system in CPP on a hexadecimal map
 
 # Requirements
 
