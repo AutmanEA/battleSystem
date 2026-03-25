@@ -31,4 +31,4 @@ re		: fclean all
 vg:
 	valgrind ./$(NAME)
 
-.PHONY	: all clean fclean re vg docker
+.PHONY	: all clean fclean re
